@@ -584,3 +584,122 @@ input:focus, select:focus, textarea:focus {
     width: 100%;
   }
 }
+/* ===== MONEYBACK GUARANTEE STICKER ===== */
+.guarantee-sticker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--deep-blue) 0%, var(--accent-blue) 100%);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 60px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(10, 38, 71, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+}
+
+.guarantee-sticker i {
+  font-size: 1.1rem;
+  color: #ffd966;
+}
+
+/* Position in header */
+.header-guarantee {
+  margin-left: auto;
+}
+
+/* Position in hero */
+.hero-guarantee {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Floating badge option */
+.guarantee-float {
+  position: relative;
+  display: inline-block;
+}
+
+.guarantee-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: var(--deep-blue);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 40px;
+  border: 2px solid white;
+  box-shadow: var(--shadow-sm);
+  white-space: nowrap;
+}
+
+.guarantee-badge i {
+  margin-right: 4px;
+  color: #ffd966;
+}
+
+/* Corner ribbon style */
+.guarantee-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--deep-blue);
+  color: white;
+  padding: 0.5rem 2rem;
+  transform: rotate(45deg) translate(20px, -20px);
+  transform-origin: top right;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-left: 2px solid #ffd966;
+  border-right: 2px solid #ffd966;
+  white-space: nowrap;
+  z-index: 5;
+}
+
+.guarantee-ribbon i {
+  margin-right: 5px;
+  color: #ffd966;
+}
+
+/* For cards */
+.card-guarantee {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--accent-blue);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-top: 1px dashed var(--light-blue);
+  padding-top: 1rem;
+}
+
+.card-guarantee i {
+  color: #2e7d32;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .guarantee-sticker {
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .header-guarantee {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  .guarantee-ribbon {
+    font-size: 0.8rem;
+    padding: 0.4rem 1.8rem;
+  }
+}
